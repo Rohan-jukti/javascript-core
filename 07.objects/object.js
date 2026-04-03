@@ -169,3 +169,173 @@
 //     console.log(key, person1obj[key])
 // }
 
+
+
+// let person1obj = {
+//     name : "sourav",
+//     age : 20,
+//     gender : "male",
+//     key : "value"
+// }
+
+//object.keys(obj)--> gives you an array of key
+// console.log(Object.keys(person1obj)); //[ 'name', 'age', 'gender', 'key' ]
+
+//object.values(obj)---> gives you an array of values
+// console.log(Object.values(person1obj))  //[ 'sourav', 20, 'male', 'value' ]
+
+//to find the length of an object
+// console.log(Object.keys(person1obj).length)  //4
+
+
+//for any given obj display all its values without using for in loop
+
+// let person1obj = {
+//     name : "sourav",
+//     age : 20,
+//     gender : "male",
+//     key : "value"
+// }
+
+// let value = Object.values(person1obj)
+// for(let i=0; i<value.length; i++){
+//     console.log(value[i])
+// }
+
+
+//find the sum of elements in the object
+
+
+// let obj = {
+//     marks1: 50,
+//     marks2: 30,
+//     marks3: 40,
+//     marks4: 50,
+// }
+
+// let values = Object.values(obj)
+// let sum = 0;
+// for(let i=0; i<values.length; i++){
+//     sum+=values[i]
+   
+// }
+//  console.log(sum)
+
+//insert country: "India" inside the given obj
+
+// let data={
+//     address: {
+//         city:"pune",
+//         pin: 411014
+//     }
+// }
+// data.address.county = "INDIA"
+// console.log(data)
+
+
+////////////////////////*array off object* //////////////////////
+
+// let students = [
+//     {id:1, name: 'Aman', marks: 82, gender: "male"},
+//     {id:2, name: 'Sara', marks: 91, gender: "female" },
+//     {id:3, name: 'Rohit', marks: 25,gender: "male"},
+//     {id:4, name: 'Sachin', marks: 100,gender: "male"},
+//     {id:5, name: 'Shreya', marks: 30,gender: "female"},
+//     {id:6, name: 'Astha', marks: 99,gender: "female"},
+// ]
+
+//task1: print the name of all the student
+
+// for(let i=0; i<students.length; i++){
+//     console.log(students[i].name)
+// }
+
+//task: print the name all female students
+// for(let i=0; i<students.length; i++){
+//     if(students[i].gender === "female"){
+//         console.log(students[i].name)
+//     }
+// }
+
+//task3: print the name of male student who got below 50
+
+// for(let i=0; i<students.length; i++){
+//     if(students[i].marks<50 && students[i].gender === "male"){
+//         console.log(students[i].name)
+//     }
+// }
+
+// let user = {
+//     name: "Rohan",
+//     age: 23,
+//     city: "pune"
+// }
+
+//  let {name, age} = user
+//  console.log(name); // Rohan
+//  console.log(age);  // 23
+//  let product = {
+//     title: "phone",
+//     price: 30000
+//  }
+//  // destructuring using the name of some other variable
+
+//  let {title: productTitle, price: productPrice} = product;
+//  console.log(productTitle, productPrice);
+
+
+
+// let people = [
+//     {name: "alice" , city:"NYC"},
+//     {name: "Bob" , city: "LA"},
+//     {name: "charlie" , city:"NYC"}
+// ]
+
+
+// {
+//     NYC:[{name:"Alice",city:"NYC"},{name:"charlie",city:"NYC"}]
+//     LA:[{name:"Bob",city:"LA"}]
+// }
+
+// let result = Object.groupBy(people,({city})=>
+//     city==="NYC" ? "NYC" : "LA",
+// )
+// console.log(result)
+
+// let result = {}
+// for(let i=0; i<people.length; i++){
+//     let city = people[i].city;
+//     if(!result[city]){
+//         result[city] = []
+//     }
+//     result[city].push(people[i])
+    
+// }
+// console.log(result)
+
+
+
+//wordCount("hello world hello")-->{hello:,world:1}
+//wordcount("The the THE") ---> {the:3}
+//wordcount("one") --> {one:1}
+
+// function wordCount(str){
+//     str = str.toLowerCase();   
+//     let words = str.split(" ");
+//     let result = {};
+
+//     for(let i = 0; i < words.length; i++){   
+//         if(!result[words[i]]){
+//             result[words[i]] = 1;
+//         } else {
+//             result[words[i]]++;
+//         }
+//     }
+
+//     console.log(result);
+// }
+
+// wordCount("hello world hello");
+
+
+
