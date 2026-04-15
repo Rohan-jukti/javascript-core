@@ -292,15 +292,15 @@
 // ]
 
 
-// {
-//     NYC:[{name:"Alice",city:"NYC"},{name:"charlie",city:"NYC"}]
-//     LA:[{name:"Bob",city:"LA"}]
-// }
+// // {
+// //     NYC:[{name:"Alice",city:"NYC"},{name:"charlie",city:"NYC"}]
+// //     LA:[{name:"Bob",city:"LA"}]
+// // }
 
-// let result = Object.groupBy(people,({city})=>
+// let grouped = Object.groupBy(people,({city})=>
 //     city==="NYC" ? "NYC" : "LA",
 // )
-// console.log(result)
+// console.log(grouped)
 
 // let result = {}
 // for(let i=0; i<people.length; i++){
@@ -315,7 +315,7 @@
 
 
 
-//wordCount("hello world hello")-->{hello:,world:1}
+//wordCount("hello world hello")-->{hello:2,world:1}
 //wordcount("The the THE") ---> {the:3}
 //wordcount("one") --> {one:1}
 
@@ -339,3 +339,25 @@
 
 
 
+// {
+//     NYC:[{name:"Alice",city:"NYC"},{name:"charlie",city:"NYC"}]
+//     LA:[{name:"Bob",city:"LA"}]
+// }
+
+
+
+
+// let people = [
+//     {name: "alice" , city:"NYC"},
+//     {name: "Bob" , city: "LA"},
+//     {name: "charlie" , city:"NYC"}
+// ]
+
+
+
+// let grouped = Object.groupBy(people, ({city})=>
+//     city === "NYC" ? "NYC" : "LA"
+// )
+// console.log(grouped
+
+// )
