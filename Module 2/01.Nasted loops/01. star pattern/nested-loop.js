@@ -81,3 +81,52 @@
 // }
 
 
+//Q.6 print diamond pattern
+//    *
+//   ***
+//  *****
+// *******
+//  *****
+//   ***
+//    *
+
+// for(let i=1; i<=4; i++){
+//     let space = ""
+//     for(let j=1; j<=4-i; j++){
+//         space += " "
+//     }
+// for(let k=1; k<=2*i-1; k++){
+//     space += "*"
+// }
+// console.log(space)
+// }
+// for(let i=3; i>=1; i--){
+//     let space = ""
+//     for(let j=1; j<=4-i; j++){
+//         space += " "
+//     }
+// for(let k=1; k<=2*i-1; k++){
+//     space += "*"
+// }
+// console.log(space)
+// }
+
+
+//Q7.print Hollow Square
+// *****
+// *   *
+// *   *
+// *   *
+// *****
+
+// for(let i=1; i<=5; i++){
+//     let line = ""
+//     for(let j=1; j<=5; j++){
+//         if(i===1 || i===5 || j===1 || j===5){
+//             line+="*"
+//         }else{
+//             line+=" "
+//         }
+//     }
+//     console.log(line)
+// }
